@@ -10,7 +10,7 @@ a {
 
 body {
     
-    background-image: url(/ressources/img/rsc/bckUniverse.jpg);
+    background-image: url(ressources/img/rsc/bckUniverse.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     object-fit: cover;
