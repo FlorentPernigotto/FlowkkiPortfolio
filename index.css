@@ -6,6 +6,7 @@ h1, h2, h3, blockquote, p {
 }
 a {
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 body {
@@ -88,9 +89,9 @@ header {
     font-weight: 500;
     margin: 0;
     padding: 0;
-    
-}
 
+}
+/* Style article biographie d'entreprise */
 /* Style gallerie d'icone des média sociaux */
 
 #social-network {
@@ -98,8 +99,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-self: center;
-    width: 100%;
+    width: auto;
     height: auto;
     gap: 20px;
     row-gap: 20px;
@@ -109,13 +109,25 @@ header {
 
 #social-network a {
 
+    display: flex;
+    justify-content: center;
     width: 120px;
     height: 75px;
+    border-bottom: 2px solid #FFFFFF;
+    border-radius: 10px;
+    align-items: baseline;
+    padding-bottom: 15px;
 
+}
+
+#social-network a img:hover {
+    transform: scale(120%);
+    transition-duration: 0.7s;
 }
 
 #social-network a img {
 
+    align-self: center;
     width: 120px;
     height: 75px;
     margin-top: 25px;
