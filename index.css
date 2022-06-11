@@ -11,10 +11,11 @@ a {
 body {
     padding: 0 auto;
     margin: 0 auto;
-    background-image: url(./ressources/img/rsc/bckUniverse.jpg);
-    background-size: 1500px 100%;
+    /*background-image: url(./ressources/img/rsc/bckUniverse.jpg);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    background-color: #0a071c;
     width: 100vw;;
     display: flex;
     justify-content: center;
@@ -39,14 +40,29 @@ header {
     
 }
 
+/* Style conteneur du titre d'en-tête */
+
 #container__title {
     
     text-align: center;
     margin-top: 75px;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
     width: auto;
 
 }
+
+/* Style bordure contour du conteneur titre */
+
+.border_bottom {
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.border_right {
+    border-right: 2px solid whitesmoke;
+}
+
+/* Style titre H1 */
 
 #index-title {
 
@@ -56,6 +72,8 @@ header {
     padding: 0;
 
 }
+
+/* Style slogan personnelle */
 
 #container__quote {
     
@@ -71,6 +89,8 @@ header {
     margin: 0;
     padding: 0;
 }
+
+/* Style gallerie d'icone des média sociaux */
 
 #social-network {
     display: flex;
@@ -97,15 +117,32 @@ header {
     margin-bottom: 2vh;
 }
 
+/* Style background des galleries */
+
+.background-transparent {
+    
+    z-index: 10;
+    background-color: rgba(217, 217, 217, 25%);
+    opacity: 0.4;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Style gallery des projets */
+
 #section-project {
     display: flex;
     justify-content: center;
-    padding: 0 0 50px 0;
+    padding: 0 0 20px 0;
+    position: relative;
+    width: 100%;
+
 }
 
 #gallery-project {
     display: flex;
-    background-color: rgba(217, 217, 217, 25%);
     width: calc((10vw * 4 ) + (50px * 3));
     padding-top: 30px;
     padding-bottom: 20px;
@@ -114,7 +151,6 @@ header {
     margin-bottom: 25px;
     justify-content: center;
     gap: 30px;
-    border-radius: 15px;
     flex-wrap: wrap;
 }
 
@@ -135,36 +171,68 @@ header {
     font-size: 12px;
 }
 
-#section-language {
+/* Style gallerie d'outils */
+
+#section-utils {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Style gallerie language */
+
+#section-utils__language {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 45%;
+    position: relative;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
 }
 
-#gallery-language {
+#gallery-utils__language {
     display: flex;
-    background-color: rgba(217, 217, 217, 25%);
     width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
     gap: 20px;
     border-radius: 15px;
     justify-content: center;
     align-self: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
-#section-language__title {
+#section-utils__language__title {
 
     margin-top: 0;
     margin-bottom: 50px;
 
 }
 
-#gallery-language img {
+#gallery-utils__language img {
 
     width: calc ( 100% / 3 ) - ( 4 * 20px);
     height: 184px;
+
+}
+/* gallerie des Outils graphiques */
+#section-utils__graphist {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    position: relative;
+
+}
+#gallery-utils_graphist {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 
 }
