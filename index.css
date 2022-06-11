@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 70%;
+    width: 80%;
     height: auto;
     gap: 80px;
     
@@ -139,7 +139,7 @@ header {
 
 .background-transparent {
     
-    z-index: 10;
+    z-index: 2;
     background-color: rgba(217, 217, 217, 25%);
     opacity: 0.4;
     border-radius: 10px;
@@ -167,9 +167,6 @@ header {
     width: calc((100% * 4 ) + (50px * 3));
     padding-top: 30px;
     padding-bottom: 20px;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-bottom: 25px;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
