@@ -164,7 +164,7 @@ header {
 #gallery-project {
 
     display: flex;
-    width: calc((10vw * 4 ) + (50px * 3));
+    width: calc((100% * 4 ) + (50px * 3));
     padding-top: 30px;
     padding-bottom: 20px;
     padding-right: 30px;
