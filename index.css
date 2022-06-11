@@ -88,11 +88,13 @@ header {
     font-weight: 500;
     margin: 0;
     padding: 0;
+    
 }
 
 /* Style gallerie d'icone des média sociaux */
 
 #social-network {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -102,11 +104,14 @@ header {
     gap: 20px;
     row-gap: 20px;
     flex-wrap: wrap;
+
 }
 
 #social-network a {
+
     width: 120px;
     height: 75px;
+
 }
 
 #social-network a img {
@@ -115,6 +120,7 @@ header {
     height: 75px;
     margin-top: 25px;
     margin-bottom: 2vh;
+
 }
 
 /* Style background des galleries */
@@ -128,11 +134,13 @@ header {
     width: 100%;
     height: 100%;
     position: absolute;
+
 }
 
 /* Style gallery des projets */
 
 #section-project {
+
     display: flex;
     justify-content: center;
     padding: 0 0 20px 0;
@@ -142,6 +150,7 @@ header {
 }
 
 #gallery-project {
+
     display: flex;
     width: calc((10vw * 4 ) + (50px * 3));
     padding-top: 30px;
@@ -152,14 +161,17 @@ header {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+
 }
 
 #gallery-project a {
+
     width: calc( (100% / 4 ) + ( 30px * 3));
     
 }
 
 #gallery-project img {
+
     width: 90%;
     height: 200px;
     object-fit: cover;
@@ -168,71 +180,105 @@ header {
 }
 
 #gallery-project p {
+
     font-size: 12px;
+
 }
 
 /* Style gallerie d'outils */
 
 #section-utils {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* Style gallerie language */
 
 #section-utils__language {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 45%;
     position: relative;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+
+}
+
+#section-utils__language__title {
+
+    height: auto;
+    font-size: medium;
 
 }
 
 #gallery-utils__language {
+
     display: flex;
     width: 100%;
     gap: 20px;
     border-radius: 15px;
     justify-content: center;
-    align-self: center;
     flex-wrap: wrap;
     position: relative;
 }
 
-#section-utils__language__title {
+.card-language {
 
-    margin-top: 0;
-    margin-bottom: 50px;
+
+    width: calc(( 100% / 3 ) - ( 4 * 20px));
+    height: auto;
 
 }
 
 #gallery-utils__language img {
 
-    width: calc ( 100% / 3 ) - ( 4 * 20px);
-    height: 184px;
+    width: 100%;
 
 }
+
 /* gallerie des Outils graphiques */
+
 #section-utils__graphist {
+
     display: flex;
     flex-direction: column;
     width: 45%;
     position: relative;
 
 }
-#gallery-utils_graphist {
+
+#section-graphist__title {
+
+    font-size: medium;
+
+}
+
+#gallery-utils__graphist {
 
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+
+}
+
+#card-utils__graphist {
+
+    width: calc(( 100% / 3 ) - ( 4 * 20px));
+    height: auto;
+}
+
+#card-utils__graphist img {
+
+    width: 100%;
 
 }
